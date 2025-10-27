@@ -132,6 +132,6 @@ Licensed under the Apache License. See [LICENSE](LICENSE)
 
 ## Build Status
 
-![État de la construction](https://github.com/ulysse104/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)
+![Build Status](https://github.com/ulysse104/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)
 
 ## <h3 align="center"> © IBM Corporation 2022. All rights reserved. <h3/>
