@@ -144,7 +144,7 @@ class TestAccountService(TestCase):
         response = self.client.get(f"{BASE_URL}/9999")  # un id inexistant
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
         data = response.get_json()
-        self.assertIn("Account not found", data["message"])
+        self.assertIn("could not be found", data["message"])
 
     def test_update_account(self):
         """It should Update an existing Account"""
@@ -175,7 +175,7 @@ class TestAccountService(TestCase):
         data = resp.get_json()
         self.assertEqual(len(data), 5)
 
-        def test_method_not_allowed(self):
+    def test_method_not_allowed(self):
         """It should not allow an illegal method call"""
         resp = self.client.delete(BASE_URL)
         self.assertEqual(resp.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
